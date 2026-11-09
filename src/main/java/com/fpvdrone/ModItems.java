@@ -20,7 +20,7 @@ public class ModItems {
 	}
 
 	public static void initialize() {
-		CreativeModeTabEvents Punkt modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES);
+		CreativeModeTabEvents Punkt modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
 				.register(tab -> tab.accept(DRONE));
 	}
 }
