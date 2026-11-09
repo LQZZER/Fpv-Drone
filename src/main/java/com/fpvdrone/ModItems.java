@@ -2,7 +2,7 @@ package com.fpvdrone;
 
 import java.util.function.Function;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -20,7 +20,7 @@ public class ModItems {
 	}
 
 	public static void initialize() {
-		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+		CreativeModeTabEvents Punkt modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
 				.register(tab -> tab.accept(DRONE));
 	}
 }
